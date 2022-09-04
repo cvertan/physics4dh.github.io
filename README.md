@@ -1,2 +1,2 @@
-# physics4dh.github.io
+# Physics for Digital humanities
 Methods from Physics used in DH
