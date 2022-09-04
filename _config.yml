@@ -4,4 +4,5 @@ plugins:
 gem "github-pages", group: :jekyll_plugins
 title: [Physics for DH]
 description: Methods from Physics which can be applied to DH
-show_downloads :true
+site :
+-show_downloads :true
