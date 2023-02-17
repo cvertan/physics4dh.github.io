@@ -10,12 +10,16 @@ p{
     font-weight: bold;
     color: firebrick;
 }
+
 .important{
    color: black;
-    border: 1px dotted mistyrose;
-  padding: 10px;
+border: 1px dotted mistyrose;
+  padding: 15px;
   background: mistyrose;
   background-clip: padding-box;
+    position: absolute;
+  right: 10px;
+  width: 600px;
 }
 
 .black{
@@ -47,10 +51,13 @@ color: black;
 }
 
 div.gallery {
-  margin: 10px;
+ margin: 10px;
   border: 1px solid #ccc;
-  float: left;
-  width: 500px;
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width: 40%;
+float: none;
 }
 
 div.gallery img {
@@ -61,6 +68,7 @@ div.gallery img {
 div.desc {
   padding: 10px;
   text-align: center;
+   border: 1px solid #ccc;
 }
 
 .eq {
