@@ -6,13 +6,13 @@ p{
 }
 
 .def {
-    background-color: white;
+    background-color: snow;
     font-weight: bold;
     color: firebrick;
 }
 
 .important{
-   color: black;
+    color: black;
 border: 1px dotted mistyrose;
   padding: 15px;
   background: mistyrose;
@@ -24,6 +24,20 @@ border: 1px dotted mistyrose;
 
 .black{
 color: black; 
+}
+
+.ref{
+color: slategray;  
+}
+
+.acknow{
+    border: 3px dotted mistyrose;
+      box-sizing: border-box;
+    padding: 5px;
+     position: relative;
+   width: 650px;
+    font-size:18px;
+    color: slategray;
 }
 
 .margin_first {
