@@ -1,0 +1,10 @@
+#a, #b {
+    width: 50%;
+    height: 400px;
+    float: left;
+    overflow-y: scroll;
+}
+#a .col1, #a .col2 {
+    width: 50%;
+    float: left;  
+}
