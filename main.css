@@ -2,6 +2,9 @@ frame {
     overflow: scroll;
   
 }
+h2 {
+   color: blue; 
+}
 .a{
    display: flex; 
     justify-content: center ;
