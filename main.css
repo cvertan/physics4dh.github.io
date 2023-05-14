@@ -2,7 +2,7 @@ frame {
     overflow: scroll;
   
 }
-h2 {
+.titleformat {
    color: blue; 
 }
 .a{
