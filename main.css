@@ -1,11 +1,15 @@
 frame {
     overflow: scroll;
-    border: 1px solid blue;
+  
 }
 .a{
    display: flex; 
     justify-content: center ;
     background-color: yellow;
+    overflow-y: scroll;
+    .c{
+   display: flex; 
+    justify-content: left ;
     overflow-y: scroll;
 }
 #b .col1, {
