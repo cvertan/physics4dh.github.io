@@ -1,3 +1,7 @@
+frame {
+    overflow: scroll;
+    border: 1px solid blue;
+}
 #a{
     float: center;
     background-color: #222;
