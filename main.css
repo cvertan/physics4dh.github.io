@@ -4,7 +4,7 @@ frame {
 }
 #a{
     float: center;
-    background-color: #222;
+    background-color: yellow;
     overflow-y: scroll;
 }
 #b .col1, {
