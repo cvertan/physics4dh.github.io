@@ -2,7 +2,7 @@ frame {
     overflow: scroll;
     border: 1px solid blue;
 }
-#a{
+.a{
    display: flex; 
     justify-content: center ;
     background-color: yellow;
