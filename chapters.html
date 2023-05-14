@@ -4,7 +4,7 @@
   <body>
     <span class="c">
     <ol>
-      <li> <a href="1_Light.html" target="framecontent">Light</a> </li>
+      <li> <a href="1_Light.html" target="framecontent" onClick="return loadFramesLight()">Light</a> </li>
       <li> xx </li>
       <li> xx </li>
       <li> xx </li>
@@ -28,6 +28,12 @@
       <li> xx </li>
     </ol>
     </span>
-    
+     <script>
+   function loadFramesLight() {
+    parent.framecontent.location.href = "1_Light.html"
+    parent.frmaeterms.location.href = "glossary.html"
+    return false
+}
+ </script>
   </body>
 </html>
