@@ -3,7 +3,7 @@
     background-color: pink;
     overflow-y: scroll;
 }
-#b .col1, #a .col2 {
+#b .col1, {
     width: 50%;
     float: left;  
      height: 400px;
