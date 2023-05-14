@@ -3,7 +3,8 @@ frame {
     border: 1px solid blue;
 }
 #a{
-    float: center;
+   display: flex; 
+    justify-content: center ;
     background-color: yellow;
     overflow-y: scroll;
 }
