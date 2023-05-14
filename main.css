@@ -1,10 +1,10 @@
-#a, #b {
-    width: 50%;
-    height: 400px;
-    float: left;
+#a{
+    float: center;
+    background-color: pink;
     overflow-y: scroll;
 }
-#a .col1, #a .col2 {
+#b .col1, #a .col2 {
     width: 50%;
     float: left;  
+     height: 400px;
 }
