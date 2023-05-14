@@ -1,6 +1,6 @@
 #a{
     float: center;
-    background-color: pink;
+    background-color: #222;
     overflow-y: scroll;
 }
 #b .col1, {
