@@ -3,7 +3,7 @@ frame {
   
 }
 .titleformat {
-   color:#0000FF; 
+   color: blue; 
 }
 .a{
    display: flex; 
