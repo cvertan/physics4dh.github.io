@@ -1,0 +1,246 @@
+<html>
+<head>
+        <p class="head">3D Laser Scanning</p>
+    <link rel="stylesheet" type="text/css" href="exampleStyle.css"/>
+   
+    <style> 
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+        
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F8F8FF;
+}        
+       </style>
+ <hr>
+</head>
+<body>
+        
+    <div id="Overview">
+   <p class="thema">Overview</p> 
+        
+ <p><a class="def">Laser scanning</a> is a type of <a target="_blank" class="ref" href=M41_3D.html>3D scanning</a> approach. It is the process of capturing three-dimensional spatial data in the form of a point cloud using <a target="_blank" class="ref" href=22_Laser.html>lasers</a>. Modern laser scanners can gather detailed point clouds, and these datasets are used to construct digital 3D representations of the scanned area using point cloud processing software.</p>
+        
+<p>Types of laser scanning by technology used are <a class="ref" href=M41_3D_Laser_Scanning.html#Principle>Time of Flight</a>, <a class="ref" href=M41_3D_Laser_Scanning.html#Principle>Phase based</a>, <a class="ref" href=M41_3D_Laser_Scanning.html#Principle>Laser Triangulation</a>.</p>
+        
+<p> </p>
+<p> </p>
+<p> </p>
+        
+</div>
+    
+    <div id="P">
+   <p class="thema">Principle</p> 
+    <p>The <a class="def">time-of-flight</a> laser scanner work is based on the principle of capturing the time taken for the signal to bounce back from the target object. A laser light is directed and then bounced off the target at a distance. A laser range finder calculates the distance to a surface by timing the round trip of a pulse of <a target="_blank" class="ref" href=1_Light.html>light</a> using the known value for the speed of light. </p>
+<p>The time-of-flight scanner operates based on the below formula: </p>
+<p><b>Distance</b> = (<b>Speed-of-Light</b> x <b>Time-of-flight</b>)/2 </p>
+        
+<p>The scanner function is to determine the distance to the target object and the horizontal and vertical angle for every position it is at, in a grid fashion, 360&deg; horizontal plane and approximately 330&deg; vertical plane. </p>
+        
+<p>For the area scanned, the distance measured is used to calculate the 3d coordinates (x, y, z) for each point. With a single scan, a laser scanner captures a million points with the respective 3d coordinates. The point cloud generated from the laser scanner are processed to generate the digital representation of the scanned surface. </p>
+        
+<div class="gallery">
+  
+    <img src="Figures/Time-of-flight.jpg" width="400" height="100">
+
+  <div class="desc">Time measurement unit (counter) determines measured distance via the time it takes for transmitted laser pulse to reflect off object and return to the scanner. Sources: <a target="_blank" href="https://lviv.vgorode.ua/news/dosuh_y_eda/a1177676-teritorija-hihantskikh-skulptur-park-3020-tsina-hrafik-avtobusiv-zi-lvova-rozklad-roboti#gallery-1">https://lviv.vgorode.ua</a>, <a target="_blank" href="https://www.researchgate.net/figure/Working-principles-of-time-of-flight-and-phase-shift-laser-scanners_fig3_331237691">www.researchgate.net</a>, <a target="_blank" href="https://cloud.sdsc.edu/v1/AUTH_opentopography/www/shortcourses/17Utah/17Utah_Crosby_introLidar.pdf">https://cloud.sdsc.edu</a>.
+    </div>
+    </div>
+        
+<p>The time-of-flight scanner requires higher scanning time when compared to a phase shift scanner, but these scanners can be used to cover a larger area (up to 2 km). In most cases, a time-of-flight scanner will only be utilized if a phase shift laser scanner is not feasible due to the distance involved. For example, the time-of-flight laser scanners are mainly used for the scanning of mines, tunnels and caves. </p>
+        
+<p>The <a class="def">phase-based</a> laser scanner, also known as a phase-shift laser scanner, works on the principle of determining an object’s distance by the phase shift between the incoming and reflected signals. These scanners use a continuous-wave laser beam. In more technical terms, the wave form of the reflected light from the object is compared to the <a target="_blank" class="ref" href=15_Wave.html>wave</a> form of the emitted light. By measuring the <a target="_blank" class="ref" href=15_Wave.html>phase shift</a>, the scanner can calculate the distance to each point on the object's surface. The phase shift is measured using interferometry, which compares the phase of the <a target="_blank" class="ref" href=23_Reflection.html>reflected light</a> to a reference signal. The reference signal is typically a portion of the laser beam that is split off and sent to a reference detector. By comparing the phase of the reflected light to the phase of the reference signal, the scanner can calculate the phase shift and therefore the distance to the object. </p>
+<p>The phase-based laser scanner operates due to the formula: </p>
+<p><b>Time-of-Flight</b> = <b>Phase-Shift</b> / (2π x <b>Modulation-Frequency</b>)</p>
+        
+<p>Modulation <a target="_blank" class="ref" href=15_Wave.html>frequency</a> refers to the frequency at which the laser beam's phase is modulated or varied. The choice of modulation frequency depends on several factors, including the desired scanning speed, the characteristics of the target surface, and the requirements of the imaging or sensing application. Typically, modulation frequencies in phase-shift laser scanning systems range from a few <a target="_blank" class="ref" href=30_Units.html>hertz</a> to several <a target="_blank" class="ref" href=30_Units.html>kilohertz</a>. Higher modulation frequencies allow for faster scanning speeds, however, also introduce certain challenges, such as increased sensitivity to vibrations or noise. Therefore, the selection of the modulation frequency involves a trade-off between scanning speed, image quality, and system constraints.</p>
+    
+<div class="gallery">
+  
+    <img src="Figures/Phase-shift.jpg" width="400" height="100">
+
+  <div class="desc">Phase meter determines the distance via the phase shift between transmitted and reflected signal. Sources: <a target="_blank" href="https://lviv.vgorode.ua/news/dosuh_y_eda/a1177676-teritorija-hihantskikh-skulptur-park-3020-tsina-hrafik-avtobusiv-zi-lvova-rozklad-roboti#gallery-1">https://lviv.vgorode.ua</a>, <a target="_blank" href="https://www.researchgate.net/figure/Working-principles-of-time-of-flight-and-phase-shift-laser-scanners_fig3_331237691">www.researchgate.net</a>, <a target="_blank" href="https://cloud.sdsc.edu/v1/AUTH_opentopography/www/shortcourses/17Utah/17Utah_Crosby_introLidar.pdf">https://cloud.sdsc.edu</a>.
+    </div>
+</div>
+            
+<p>The advantages of the phase based method are the very high measurement speed, the higher accuracy and the resolution of the generated point cloud of the object's surface. The method is particularly suitable for the detection of complex contiguous geometries with limited range having a scanning range of 300 m. The phase-based scanners are more adaptable than the time-of-flight scanners and are utilized in a variety of project environment including heritage, archaeology, architecture, and civil engineering projects. </p>
+        
+<p>In comparison to a time-of-flight scanners, phase-based scanner is far more precise and has a scanning range of 300 m. </p>
+    
+<p><a class="def">Triangulation laser scanners</a> are used to scan object which requires micron level detail. These are generally used for short scans ranging from 0.5 – 2 m. A triangulation laser scanner works based on trigonometric calculation and it comprises of <b>three main elements: a laser scanner, camera and the object to be scanned</b> placed on a rotating plate to obtain the scan of different faces.</p>
+        
+<p>The scanner emits a laser beam at a known angle onto the surface of an object, and the reflection of the beam is captured by a camera (sensor). The sensor records the position of the reflection and calculates the distance between the scanner and the object based on the angle of the projected laser beam and the displacement of the reflection. The angle between the laser beam and the camera sensor is typically fixed in triangulation scanners. The sensor records the position of the <a target="_blank" class="ref" href=23_Reflection.html>reflection</a> of the <a target="_blank" class="ref" href=22_Laser.html>laser beam</a> relative to the camera sensor and then calculates the distance to the object based on the principles of trigonometry. The resulting data can are used to create a 3D point cloud of the scanned object's surface.</p>
+        
+<div class="gallery">
+  
+    <img src="Figures/3D-Sensor-illustrations-02-scaled.jpg" width="400" height="100">
+
+  <div class="desc">The inspected object is moving along the Y-axis and is scanned by the camera. A laser line is projected onto the object perpendicular to this axis and the laser profile that is formed is imaged in a 2D pixel array for each scan. Due to the different heights of different parts of the object, combined with the angle between the laser and the camera, the laser line is “distorted” into a laser profile when projected onto the object. In each image (which represents a 3D slice in the Y direction of the object), the row within every column (X) represents the height (Z) of the object at that point. Source: <a target="_blank" href="https://imaging.teledyne-e2v.com/products/applications/3d-imaging/laser-triangulation/">https://imaging.teledyne-e2v.com</a></div>
+</div>      
+                
+<p>While laser triangulation can create precise scans, it doesn’t work on transparent or shiny surfaces.</p>
+             
+</div>
+    
+    <div id="Equip">
+   <p class="thema">Used Equipment</p> 
+    
+<p><b>Laser scanners</b> cover a variety of instruments that operate on differing principles, in different environments and with different levels of precision and accuracy. Depending on the type of <a target="_blank" class="ref" href=22_Laser.html>laser</a>, <a target="_blank" class="ref" href=1_Light.html>light</a>, or sensor used, the level of detail and efficiency of making the scan can differ. </p>  
+        
+<p>While collecting the data, the 3D scanner can be mounted on a tripod (terrestrial scanner), a vehicle or drone (aerial scanner).</p>         
+    
+<p>Leica, Trimble, Faro, Zoller+Fröhlich, Riegl, Topcon, Teledyne Optech etc. are some of the market leaders in the manufacture of Laser Scanners. Usually, the proper <b>software</b> for point cloud alignment and modelling is provided by the manufacturer of the scanning systems.</p> 
+<p>Overviews of commercially available <b>3D laser scanners</b> are given here:
+       <a target="_blank" href="https://all3dp.com/1/best-3d-scanner-diy-handheld-app-software/">https://all3dp.com</a>,
+       <a target="_blank" href="https://scantech-international.com/blog/timeline-of-3d-laser-scanners">https://scantech-international.com</a>,
+       <a target="_blank" href="https://leica-geosystems.com/products/laser-scanners">https://leica-geosystems.com</a>,
+       <a target="_blank" href="https://kreon3d.com/de/laserscanner/">https://kreon3d.com</a>,
+       <a target="_blank" href="https://www.zofre.de/en/laser-scanners/3d-laser-scanner">www.zofre.de</a>,
+       <a target="_blank" href="https://www.faro.com/en/Products/Hardware/Focus-Laser-Scanners">www.faro.com</a>,
+       <a target="_blank" href="https://www.geo3d.hr/3d-laser-scanners/teledyne-optech">www.geo3d.hr</a>.
+    Some of them are indicated in the Table. </p>
+        
+    <table>
+  <tr>
+    <th>Laser Scanner</th>
+    <th>Operating Range</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td>FARO Focus3D X 330 </td>
+    <td>0,6 m - 330 m</td>
+    <td><a target="_blank" href="https://www.laserscanning-europe.com/de/system/files/redakteur_images/Datenblatt_FARO_Focus3D_X_330.pdf">www.laserscanning-europe.com</a>  </td>
+  </tr>
+  <tr>
+    <td>Leica HDS 3000 </td>
+    <td>up to 120 m</td>
+    <td><a target="_blank" href="http://www.geogostar.ir/download/datasheet/LEICA%20SCAN%20STATION.pdf">www.geogostar.ir</a></td> 
+  </tr>
+  <tr>
+    <td>Leica BLK360</td>
+    <td>0,6 m - 60 m</td>
+    <td><a target="_blank" href="https://leica-geosystems.com/products/laser-scanners/scanners/blk360">https://leica-geosystems.com</a></td>
+  </tr>
+  <tr>
+    <td>Leica RTC360</td>
+    <td>0,5 m - 130 m</td>
+    <td><a target="_blank" href="https://leica-geosystems.com/products/laser-scanners/scanners/leica-rtc360">https://leica-geosystems.com</a></td>
+  </tr>
+  <tr>
+    <td>Lucida 3D scanner</td>
+    <td>up to 2,5 cm</td>
+    <td><a target="_blank" href="https://www.factumfoundation.org/pag_fa/1552/recording-with-the-lucida-3d-scanner">www.factumfoundation.org</a></td>
+  </tr>
+  <tr>
+    <td>NUB3D SIDIO scanners</td>
+    <td>330 mm - 950 mm</td>
+    <td><a target="_blank" href="https://www.wr-cmm3d.com/Files/Name2/CONTENT59682d2cb5ea8315003904327510707226368675.pdf">www.wr-cmm3d.com</a></td>
+  </tr>
+<tr>
+    <td>Kreon Zephyr 50</td>
+    <td>90 mm</td>
+    <td><a target="_blank" href="https://kreon3d.com/de/3d-scanner-fur-kmgs-zephyr-iii-50-fuer-kleine-geometrien/">https://kreon3d.com</a></td>
+  </tr>   
+<tr>
+    <td>Minolta Vivid 910 scanning system</td>
+    <td>between 110x80x40 mm and 1200x900x750mm</td>
+    <td><a target="_blank" href="https://fab.cba.mit.edu/content/tools/minolta_3D_scanner/index.html">https://fab.cba.mit.edu</a></td>
+  </tr>  
+<tr>
+    <td>Z+F IMAGER &reg; 5016</td>
+    <td>up to 360 m</td>
+    <td><a target="_blank" href="https://www.zofre.de/en/laser-scanners/3d-laser-scanner/z-f-imagerr-5016">www.zofre.de</a></td>
+  </tr>        
+</table>
+        
+<iframe width="665" height="380"
+src="https://www.youtube.com/embed/axUwbzTURpo?autoplay=1&mute=1">
+</iframe>
+         
+</div>
+    
+<div id="Tasks">
+   <p class="thema">Research tasks &amp; applications</p> 
+        
+<p>3D laser scanning has a wide application footprint globally, and has been utilized in civil engineering, plant design, movie animation, architectural design, planning, and forensic investigation. </p>
+<p>Over recent years 3D laser scanning has become part of a non-contact approach to the documentation of cultural heritage and its long term preservation. 3D laser scanning provides a high-resolution, non-invasive documentation method to understand natural and cultural sites and manage its exposure to natural and man-made threats. Researchers in diverse fields are unlocking numerous applications using this technology, just like speleologists who are using laser scan data to study and measure caves with millimetre-level accuracy in a non-intrusive way <a target="_blank" href="https://leica-geosystems.com/case-studies/science-and-education/preserving-romania-s-speleological-heritage-with-point-cloud-and-gnss-data">[leica-geosystems.com]</a>.  </p>
+
+<p>The phase based method is particularly suitable for measuring small to medium distances with high acquisition speed. </p>
+<p>Time of flight method allows very long range measurements and high accuracies.</p>
+    </div>
+    
+    
+    <div id="Cases">
+   <p class="thema">Case Studies</p> 
+        
+<p>Over recent years 3D scanning has become part of a non-contact approach to the documentation of cultural heritage and its long term preservation. There are some examples of 3D laser scanning usage:</p>
+        
+    <table>
+  <tr>
+    <th>Scanned Object </th>
+    <th>Scanning Method</th>
+    <th>Source</th>
+  </tr>
+    <tr>
+    <td>The facade of San Petronio in Bologna, Italy</td>
+    <td>long range 3D laser scanning</td>
+    <td><a target="_blank" href="https://www.factumfoundation.org/pag/593/basilica-di-san-petronio-project">www.factumfoundation.org</a></td> 
+  </tr>
+  <tr>
+    <td>Hereford Mappa Mundi, Hereford Cathedral, UK</td>
+    <td>close range 3D laser scanning</td>
+    <td><a target="_blank" href="https://www.factumfoundation.org/pag/202/Mapping-the-Hereford-Mappa-Mundi">www.factumfoundation.org</a>, <a target="_blank" href="https://www.themappamundi.co.uk/index.php">www.themappamundi.co.uk</a></td>
+  </tr>
+    <tr>
+    <td>The Meziad Cave in western Carpathians, Romania </td>
+    <td>long range 3D laser scanning</td>
+    <td><a target="_blank" href="https://leica-geosystems.com/case-studies/science-and-education/preserving-romania-s-speleological-heritage-with-point-cloud-and-gnss-data">https://leica-geosystems.com</a></td>
+  </tr>
+   
+<tr>
+    <td>The recreated Vincent Van Gogh’s Five Sunflowers in a Vase, destroyed in 1945, National Gallery in London, UK </td>
+    <td>close range 3D laser scanning</td>
+    <td><a target="_blank" href="https://www.ingenia.org.uk/ingenia/issue-92/technology-to-recreate-artworks">www.ingenia.org.uk</a></td>
+  </tr>  
+ 
+</table>
+    </div>
+    
+    <p class="acknow">Acknowledgements: 
+        [<a class="ref" href=bibliography.html#Boardman_Bryan_2018>Boardman_Bryan_2018</a>],
+        [<a class="ref" href=bibliography.html#ls_europe>ls_europe</a>], 
+        [<a class="ref" href=bibliography.html#Marshall_2012>Marshall_2012</a>], 
+        [<a class="ref" href=bibliography.html#wiki>wiki</a>], 
+        [<a class="ref" href=bibliography.html#3D_2006>3D_2006</a>], 
+        [<a class="ref" href=bibliography.html#3D_2023>3D_2023</a>], 
+        [<a class="ref" href=bibliography.html#laserax>laserax</a>],
+        [<a class="ref" href=bibliography.html#FactumArte_1>FactumArte_1</a>],
+        [<a class="ref" href=bibliography.html#cyark>cyark</a>],
+        [<a class="ref" href=bibliography.html#qualitymag>qualitymag</a>],
+        [<a class="ref" href=bibliography.html#bimexeng>bimexeng</a>],
+        [<a class="ref" href=bibliography.html#mdpi>mdpi</a>],
+        [<a class="ref" href=bibliography.html#Merwe_2013>Merwe_2013</a>].</p> 
+    
+    
+    <!--  
+    
+    -->
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<html>
+<head>
+        <p class="head">Photogrammetry</p>
+    <link rel="stylesheet" type="text/css" href="exampleStyle.css"/>
+   
+    <style> 
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+        
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F8F8FF;
+}        
+       </style>
+ <hr>
+</head>
+<body>
+  
+    <div id="Overview">
+   <p class="thema">Overview</p> 
+        
+  <p><a class="def">Photogrammetry</a> is is a type of <a target="_blank" class="ref" href=M41_3D.html>3D scanning</a> approach. This technique employs 2D images to create a 3D model of an object or surface. It involves taking hundreds of overlapping photographs of an object from many different angles and processing them using specialised software. Photogrammetry is special way to obtain 3D information in situations where it is not possible to use 3D scanners (inaccessible locations, conflict zones), or when high-speed recording is required (scanning people, living organisms, liquids in movement). This technique is suitable for the quick recording of vulnerable and inaccessible sites. Also, it is ideal for the recording of translucent surfaces like alabaster and marble.</p>
+    
+ <p>Long-range or ‘aerial’ photogrammetry was developed in the 19<a class="super">th</a> and 20<a class="super">th</a> centuries as a cartographic tool to produce three-dimensional maps of the surface of the earth. In the 21<a class="super">st</a> century, advancements in computer processing power have resulted in the rapid growth of close-range photogrammetry, which can be used to capture both the shape and fine surface detail of objects.</p>
+<p>The photogrammetry technique has a number of advantages over traditional <a target="_blank" class="ref" href=M41_3D.html>3D scanning technologies</a>, including the possibility of recording color information at the same time as 3D data. In most cases, the equipment (camera, tripod, flashes) can fit into a small camera bag, making it a particularly useful tool for recording at remote or dangerous sites.</p>
+             
+</div>
+    
+    <div id="Tasks">
+   <p class="thema">Research tasks &amp; applications</p> 
+             
+    <p>The ways that photogrammetry comes to life can vary widely by collection method, data gathered, industry use and compatible technologies. </p>
+        
+        <p>Photogrammetry makes its mark in an array of industries. Photogrammetry is commonly used in:  </p>
+        <ul class="b">
+    <li>Surveying and mapping - to create detailed maps and topographic surveys. </li>
+    <li>Architecture and engineering -  for creating 3D models of buildings and structures, measuring distances, and assessing structural integrity.</li>
+    <li>Archaeology - for recording and analyzing archaeological sites and objects, creating 3D models, and reconstructing ancient structures. As regards heritage documentation, photogrammetry is often employed in its close-range configuration.  </li>
+    <li>Forensics - to create 3D models of crime scenes, measure distances, and analyze bullet trajectories. </li>
+    <li>Mining and construction - for site planning and monitoring, creating topographic surveys, and assessing terrain changes. </li>
+    <li>Agriculture - to monitor crop growth and yields, measure distances, and assess soil erosion.</li>
+    <li>Film and video games - to create realistic 3D models and environments for special effects and virtual reality experiences. </li>
+    </ul>
+        
+    <p>As technology continues to advance, the applications of photogrammetry are likely to expand even further. </p>
+        
+<iframe width="665" height="380"            src="https://www.youtube.com/embed/CpfQZ-RYN5M?autoplay=1&mute=1">
+</iframe>
+    </div>
+    
+    <div id="P">
+   <p class="thema">Principle</p> 
+    <p>In order to make a 3D model a camera takes multiple images with overlap of the surface of the object. The images are then processed to create a digital 3D model for various applications. This process can get complex, but it all comes down to the concept of triangulation. <a target="_blank" class="ref" href=25_Triangulation.html>Triangulation</a> involves taking pictures from a minimum of two different locations. These pictures create lines of sight that lead from each camera to specific points on the object being photographed. The intersection of these lines plays into mathematical calculations that help produce 3D coordinates of the specified points.
+ </p>
+    <p>Photogrammetry software works by identifying common features on an object's surface across multiple images. Each of these ‘features’ can be described in 3D space by a series of coordinates (x, y, z). A grouping of such points is called a ‘point cloud’. During post-processing, the points are also connected to one another by lines (triangulated) and conjoined with flat planes to produce a 3D model. By applying digital colour management methods during a recording session, it also becomes possible to simultaneously obtain both 3D and accurate colour information about the surface of an object. </p>
+        
+</div>
+    
+    <div class="gallery">
+  
+    <img src="Figures/capture1.jpg" width="400" height="100">
+
+  <div class="desc">An object is photographed from multiple angles. The software detects the camera positions and plots them in 3D space, where each triangle represents a camera position. Screengrab from within RealityCapture &copy; 
+<a target="_blank" href="https://www.factum-arte.com/pag/1345/photogrammetry">Factum Foundation</a>
+        </div>
+</div>
+    
+    <div id="Equip">
+   <p class="thema">Equipment</p> 
+        
+    <p><b>Photogrammetry</b> is a fundamentally democratic technology: it can be done by anyone with a phone camera and access to free photogrammetry software. However, in order to produce the kind of high-resolution 3D models that accurately capture the geometry and surface detail of an object, a high level of skill is required for both data recording and data processing. [<a class="ref" href=bibliography.html#FactumArte_1>FactumArte_1</a>]. So far, in Photogrammetry, commercially available cameras or custom designed scanner systems (e.g. <a target="_blank" href="https://www.factum-arte.com/pag/1341/selene-photometric-scanner">Selene Photometric Scanner</a>, <a target="_blank" href="https://www.factum-arte.com/resources/files/ff/publications_PDF/Tutankhamun_Report_2012.pdf">Nub3D Sidio white light scanning system</a>) as well as specialized software (such as <a target="_blank" href="https://www.capturingreality.com/">RealityCapture (RC)</a> or <a target="_blank" href="https://www.agisoft.com/">Agisoft PhotoScan</a>) are used. </p>
+<p>Basic processing is required in the field to ensure that no areas have been missed. Post processing using specialised software is time consuming.</p>
+<p>The data can be collected from a tripod, a vehicle or from the air. Aerial photogrammetry uses satellite, commercial aircraft or drone to collect images of buildings, structures and terrain. </p>
+<p>The <a target="_blank" class="ref" href=M41_3D.html>long-</a> and <a target="_blank" class="ref" href=M41_3D.html>close-range</a> photogrammetric recording is usually being coupled with drone technology to facilitate the documentation of large cultural heritage sites – operators are able to photograph at heights and angles otherwise impossible to reach without scaffolding. </p>
+         
+</div>
+    
+    <div id="Cases">
+   <p class="thema">Case Studies</p> 
+        
+    <table>
+  <tr>
+    <th>Scanned Object </th>
+    <th>Scanning Method</th>
+    <th>Source</th>
+  </tr>
+  
+  <tr>
+    <td>Isabel II dam in N&iacute;jar, Almer&iacute;a, Spain</td>
+    <td><img src="Figures/Ph_Dam.jpg" width="400"></td>
+    <td><a class="ref" href=bibliography.html#Mart&iacute;nez-Carricondo_2021>[Mart&iacute;nez-Carricondo_2021]</a></td>
+  </tr>
+   
+<tr>
+    <td>Facsimile of the Tomb of Cardinal Tavera, Hospital Tavera, Toledo, Spain </td>
+    <td><img src="Figures/Ph_Tavera.jpg" width="100" height="200"> </td>
+    <td><a target="_blank" href="https://www.ingenia.org.uk/ingenia/issue-92/technology-to-recreate-artworks">www.ingenia.org.uk</a></td>
+  </tr>   
+        <tr>
+    <td>Kasepuhan Palace site, Cirebon, Indonesia</td>
+    <td><img src="Figures/Photogr_Murtiyoso.jpg" width="400"></td>
+    <td><a target="_blank" href=bibliography.html#Murtiyoso_2018>[Murtiyoso_2018]</a></td>
+  </tr>  
+ 
+</table>
+    <p> </p>
+    <p> </p>
+        
+</div>
+        
+    <p class="acknow">Acknowledgements: 
+        [<a class="ref" href=bibliography.html#Boardman_Bryan_2018>Boardman_Bryan_2018</a>],
+        [<a class="ref" href=bibliography.html#takeoffpros_2020>takeoffpros_2020</a>], 
+        [<a class="ref" href=bibliography.html#wiki>wiki</a>], 
+        [<a class="ref" href=bibliography.html#3D_2006>3D_2006</a>], 
+        [<a class="ref" href=bibliography.html#3D_2023>3D_2023</a>], 
+        [<a class="ref" href=bibliography.html#FactumArte_1>FactumArte_1</a>],
+        [<a class="ref" href=bibliography.html#cyark>cyark</a>].</p> 
+    
+    
+    <!--  
+    
+    -->
+    
+</body>
+</html>
