@@ -5,6 +5,12 @@ frame {
 #titleformat {
    color: blue; 
 }
+.tableglossary{
+  width: 100%;
+}
+th {
+  height: 70px;
+}
 #a{
    display: flex; 
     height: 100%;
