@@ -5,7 +5,7 @@ frame {
 #titleformat {
    color: blue; 
 }
-.tableglossary{
+#tableglossary{
   width: 100%;
 }
 th {
