@@ -3,6 +3,7 @@ p{
     text-align: justify;
     text-align-last: left;
     text-indent: 40px;
+
 }
 
 .def {
@@ -11,8 +12,12 @@ p{
     color: firebrick;
 }
 
+.unit {
+  font-weight: bold;
+}
+
 .important{
-    color: black;
+   color: black;
 border: 1px dotted mistyrose;
   padding: 15px;
   background: mistyrose;
@@ -40,6 +45,30 @@ color: slategray;
     color: slategray;
 }
 
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+        
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #F8F8FF;
+}        
+
 .margin_first {
     margin-top: 25px;
 }
@@ -49,6 +78,7 @@ color: slategray;
 }
 .thema {
     font-weight: bold;
+    color: deepskyblue;
 }
 .value {
     font-style: italic;
@@ -65,10 +95,10 @@ color: slategray;
 }
 
 div.gallery {
- margin: 10px;
+  margin: 10px;
   border: 1px solid #ccc;
-  display: block;
-  margin-left: 0px;
+   display: block;
+  margin-left: auto;
   margin-right: auto;
   width: 40%;
 float: none;
@@ -81,24 +111,32 @@ div.gallery img {
 
 img {
   display: block;
-  width: 80%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
 
 div.desc {
   padding: 10px;
   text-align: center;
-   border: 1px solid #ccc;
+     border: 1px solid #ccc;
 }
 
 .eq {
     font-size:18px;
     text-align: center;
-    border: 2px solid red;
+    border: 2px solid firebrick;
   border-radius: 8px;
   padding: 5px;
+    background: mistyrose;
+    position: relative;
+    left: 40;
+    right: auto;
+    
     /*grid-column-start: 2;
-    grid-column-end: 3;*/
+    grid-column-end: 3;
+    float: left;
+    */
 };
 
 .eqq {
