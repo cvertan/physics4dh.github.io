@@ -52,6 +52,17 @@ tr:nth-child(even) {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }   
+            .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
             
        </style>
  <hr>
@@ -70,7 +81,7 @@ tr:nth-child(even) {
     
    <!-- <div id="Tasks">-->
           <!--  <p class="thema"></p>-->
-           <button class="accordion"> Research tasks &amp; applications &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</button> 
+           <button class="accordion"> Research tasks &amp; applicationsp</button> 
        <div class="panel">      
     <p>The ways that photogrammetry comes to life can vary widely by collection method, data gathered, industry use and compatible technologies. </p>
         
