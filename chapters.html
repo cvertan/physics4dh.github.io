@@ -81,6 +81,17 @@
   <a href="#contact">Search</a>
 </div> 
   <script>
+	   const currentLocation = location.href;
+    const Items = document.querySelectorAll("a");
+    const Length = Items.length;
+  
+    for (let i = 0; i < Items.length; i++) {
+      if (Items[i].href === currentLocation) {
+        Items[i].className = "selected";
+      }
+    }
+	  </script>
+	  <script>
   function loadFramesPhoto(){
    
 			document.getElementById("framescontent").src = "https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html";
