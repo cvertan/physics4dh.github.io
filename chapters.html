@@ -19,8 +19,21 @@
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a{
   padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown-btn {
+  padding: 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
   color: black;
@@ -38,7 +51,7 @@
   color: blue;
 }
 
-.sidenav a:selected, {
+.sidenav a:selected, .dropdown-btn:selected{
   color: red;
 }
 /* Add an active class to the active dropdown button */
