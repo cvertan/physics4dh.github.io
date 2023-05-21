@@ -7,12 +7,12 @@
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: lightgray;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -37,16 +37,16 @@
   color: #f1f1f1;
 }
 
-/* Main content */
+/* Main content 
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
-
+*/
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: green;
+  background-color: yellow;
   color: white;
 }
 
@@ -89,8 +89,11 @@
 </div> 
   <script>
   function loadFramesPhoto(){
-parent.framescontnet.location='M41_3D_Photo.html
-parent.frameterm.location='glossary.html
+   
+			document.getElementById("framescontent").src = "https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html";
+			document.getElementById("frameterms").src = "https://cvertan.github.io/physics4dh.github.io/glossary.html";
+		
+
 }
 /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
