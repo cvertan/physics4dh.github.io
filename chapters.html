@@ -46,19 +46,17 @@
   outline: none;
 }
 
-/* On mouse-over */
+ On mouse-over 
 .sidenav a:hover, .dropdown-btn:hover {
   color: blue;
 }
 
-.sidenav a:selected, .dropdown-btn:selected{
-  color: red;
-}
-/* Add an active class to the active dropdown button */
+
+ Add an active class to the active dropdown button */
 /*.active {
   background-color: yellow;
   color: blue;
-}*/
+}
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
@@ -86,7 +84,7 @@
   <button class="dropdown-btn"> <a href="https://cvertan.github.io/physics4dh.github.io/M41_3D.html" target="framecontent" onClick="return loadFrames3D()">3D  Scanning<i class="fa fa-caret-down"></a></i>
   </button>
   <div class="dropdown-container">
-   <a href="https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html" target="framecontent" onClick="return loadFramesPhoto()">Photogrammetry</a> 
+   <a name="ph" href="https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html" target="framecontent" onClick="return loadFramesPhoto()">Photogrammetry</a> 
     <a href="#">Link 2</a>
     <a href="#">Link 3</a>
   </div>
@@ -95,20 +93,9 @@
   
 	 <script type="text/javascript">
 
-    $(document).onload = function(){
-	   const currentLocation = location.href;
-    const Items = document.querySelectorAll("a");
-    const Length = Items.length;
-  
-    for (let i = 0; i < Items.length; i++) {
-      if (Items[i].href === currentLocation) {
-        Items[i].className = "selected";
-      }
-    }
-	  
-	  }
+ 
   function loadFramesPhoto(){
-   
+                        document.getElementById("ph").style.color="red";
 			document.getElementById("framescontent").src = "https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html";
 			document.getElementById("frameterms").src = "https://cvertan.github.io/physics4dh.github.io/glossary.html";
 		
