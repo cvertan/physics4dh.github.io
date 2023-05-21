@@ -35,7 +35,7 @@
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: blue;
 }
 
 
@@ -68,11 +68,8 @@
   <body>
   xxx
    <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown
+  <a href="#contact">Method X</a>
+  <button class="dropdown-btn"> <a href="https://cvertan.github.io/physics4dh.github.io/M41_3D.html" target="framecontent" onClick="return loadFrames3D()">3D</a> 
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
@@ -86,6 +83,13 @@
   function loadFramesPhoto(){
    
 			document.getElementById("framescontent").src = "https://cvertan.github.io/physics4dh.github.io/M41_3D_Photo.html";
+			document.getElementById("frameterms").src = "https://cvertan.github.io/physics4dh.github.io/glossary.html";
+		
+
+}
+	   function loadFrames3d(){
+   
+			document.getElementById("framescontent").src = "https://cvertan.github.io/physics4dh.github.io/M41_3D.html";
 			document.getElementById("frameterms").src = "https://cvertan.github.io/physics4dh.github.io/glossary.html";
 		
 
