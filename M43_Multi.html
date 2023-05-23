@@ -11,10 +11,10 @@
         
  <p>Spectral imaging is a technique that combines <b>spectroscopy</b> and <b>imaging</b> to create a spectral map of a sample, which can provide information about the chemical and physical properties of the sample. It is a type of imaging that captures data from many different <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/15_Wave.html">wavelengths </a> of <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/1_Light.html">light</a> and gives a detailed view of an object or site.</p>
         
-<p>Spectral imaging can be considered as a special case of spectroscopy (“<b>imaging spectroscopy</b>”) or a special case of imaging (“<b>spectral imaging</b>”). Current practice is to use adjectives such as “<b>multi-</b>” and “<b>hyper-</b>” added to “spectral imaging” in order to characterize the number of used light wavelengths, that can vary from 10 to 2000 in one investigation.</p>
+<p>Spectral imaging can be considered as a special case of spectroscopy ("<a class="def">imaging spectroscopy</a>") or a special case of imaging (“<a class="def">spectral imaging</a>”). Current practice is to use adjectives such as “<a class="def">multi-</a>” and “<a class="def">hyper-</a>” added to “spectral imaging” in order to characterize the number of used light wavelengths, that can vary from 10 to 2000 in one investigation.</p>
         
 <div class="gallery">
-<img src="hyperspec.jpg" width="400" height="100">
+<img src="Figures/hyperspec.jpg" width="400" height="100">
 
   <div class="desc">Comparison of the image stacks in multispectral imaging, in which there are images taken in several different spectra, and hyperspectral imaging, in which there are images taken in many different spectra. Source: <a target="_blank" href="https://www.edmundoptics.de/knowledge-center/application-notes/imaging/hyperspectral-and-multispectral-imaging/">www.edmundoptics.de</a></div>
 </div>  
@@ -37,34 +37,32 @@
     <div id="P">
    <p class="thema">Principle</p> 
 
-<p> </p>
+<p>The principle of multispectral imaging involves acquiring images of a scene or object at multiple <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/15_Wave.html">wavelengths</a> across the <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/13_EM_spectrum.html">electromagnetic spectrum</a>. This is done by taking multiple images of the same object from different wavelengths of <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/1_Light.html">light</a>. It allows for the analysis of different spectral bands to gain a comprehensive understanding of the material properties, composition, and characteristics.  </p>
         
-<p> </p>
+<p>Hyperspectral camera measures thousands or hundreds of thousands of spectra, instead of single <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/15_Wave.html">spectrum</a>. It is capturing images from a broad range of the electromagnetic spectrum – it can start with <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/11_ultraviolet.html">UV</a> light, extend through the <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/18_visible_light.html">visible</a> spectrum, and end in the near or short-wave <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/10_infrared%20light.html">infrared</a>. This extended wavelength range can reveal properties of material composition that are not otherwise apparent. The collected spectra are used to form an image of the target in a way that each image pixel includes a complete spectrum. By assigning positional data to the collected light spectrums, hyperspectral imaging provides 3D spectral data that is called <a class="def">data cube</a> or <a class="def">hypercube</a>, that is essentially a stack of images of the same object/scene taken on each wavelength. In a truly hyperspectral image, each pixel corresponds to coordinates, signal intensity, and wavelength information. Finally, there is an imaging with very dense and continuous spectral information for each pixel of the image. This allows to answer the questions “what”, based on the spectrum and “where”, based on the location. To manipulate hypercube, analysis <b>software</b> is required.  </p>
         
-<p> </p>
+<p><a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/31_Transmission.html">Transmissive</a> illumination images, <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/23_Reflection.html">reflection</a> images and <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/9_Luminescence_Fluorescence.html">fluorescence</a> images can be acquired in multi- and hyperspectral process. Usually, the combination of these three corresponding techniques (<a target="_blank" class="ref" href="https://cvertan.github.io/physics4dh.github.io/M43_3_Trans_Spec.html">transmittance spectroscopy</a>, <a target="_blank" class="ref" href="https://cvertan.github.io/physics4dh.github.io/M43_1_Reflectography.html">reflectography</a> and <a target="_blank" class="ref" href="https://cvertan.github.io/physics4dh.github.io/M43_2_Flu_Spec.html">fluorescence spectroscopy</a>) are used for research purposes.  </p>
+        
+<p>The resulting multispectral data can be interpreted to gain insights into various aspects, such as material composition, <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/43_Ink_topology.html">ink topology</a>, surface characteristics, and hidden information. This analysis can involve comparing spectral signatures, applying machine learning algorithms, or referencing databases of known spectra for identification or classification purposes. </p>
         
 <div class="gallery">
   
-    <img src="Hypercube.png" width="400" height="100">
+    <img src="Figures/hyperspecIm.jpg" width="600" height="200">
 
-  <div class="desc"> Hyperspectral data cube with spectral signature. Source: <a target="_blank" href="https://www.spiedigitallibrary.org/journals/journal-of-biomedical-optics/volume-19/issue-01/010901/Medical-hyperspectral-imaging-a-review/10.1117/1.JBO.19.1.010901.full#f1">www.spiedigitallibrary.org</a>.
+  <div class="desc"> Hyperspectral data cube with spectral signature. Source: <a target="_blank" href="https://www.youtube.com/watch?v=Zaw16EdM93g">Headwall Photonics</a>.
     </div>
     </div>
                   
-<iframe width="665" height="380"
-src="https://www.youtube.com/embed/ayp7hP0Xr8Q?autoplay=1&mute=1"> </iframe>
-        
-<p> </p>
             
 <div class="gallery">
-<img src=" " width="400" height="100">
+<img src="Figures/multiS.jpg" width="400" height="100">
 
-  <div class="desc"> Source: <a target="_blank" href=" "> </a></div>
+  <div class="desc">Each pixel corresponds to coordinates, signal intensity, and wavelength information. Source: <a target="_blank" href="https://www.youtube.com/watch?v=ayp7hP0Xr8Q&t=142s">SpecimSpectral</a></div>
 </div>      
                 
-<p> </p>
              
 </div>
+    
     
     <div id="Equip">
    <p class="thema">Used Equipment</p> 
@@ -73,10 +71,17 @@ src="https://www.youtube.com/embed/ayp7hP0Xr8Q?autoplay=1&mute=1"> </iframe>
  <ol class="c">
     <li><b>Light source</b> is used to illuminate the sample. Depending on the type of sample and the application, different types of light sources may be used, such as white light, filtered light or <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/22_Laser.html">laser light </a>. </li>
     <li><b>Spectrometer</b> is used to separate the light from the sample into its component wavelengths (or frequencies). The most commonly used types of <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/27_Spectrometer.html">spectrometers</a> for spectral imaging are dispersive spectrometers and Fourier transform spectrometers.</li>
-    <li><b>Imaging system (camera or microscope)</b> is used to capture the spectral image of the sample. The imaging system typically includes a sensor or detector, which records the intensity of the <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/1_Light.html">light</a> at each <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/15_Wave.html">wavelength</a> or <a target="frameterms" class="ref" href="15_Wave.html">frequency</a>.</li>
+    <li>Special <b>hyperspectral camera</b> (or microscope) is used to capture the spectral image of the sample. It typically includes a sensor or detector, each of which records the intensity of the <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/1_Light.html">light</a> at different <a target="frameterms" class="ref" href="https://cvertan.github.io/physics4dh.github.io/15_Wave.html">wavelength</a>.
+     </li>
     <li><b>Data analysis software</b> can be used to create spectral maps, which show the distribution of different chemical or physical properties across the sample. Spectral imaging generates large amounts of data, and specialized software is required to analyze and interpret the data. </li>
     </ol>       
     
+<div class="gallery">
+<img src="Figures/Multi_S.jpg" width="400" height="100">
+
+  <div class="desc">Configuration of the hyperspectral imaging system. <a target="_blank" href=" "> </a></div>
+</div>      
+        
     <table>
   <tr>
     <th>Imaging system</th>
@@ -154,6 +159,7 @@ src="https://www.youtube.com/embed/ayp7hP0Xr8Q?autoplay=1&mute=1"> </iframe>
 [<a class="ref" href=bibliography.html#Yao_2022>Yao_2022</a>], 
 [<a class="ref" href=bibliography.html#Peery_2020>Peery_2020</a>],
 [<a class="ref" href=bibliography.html#Cohen_2017>Cohen_2017</a>],
+[<a class="ref" href=bibliography.html#edmundoptics>edmundoptics</a>],
 [<a class="ref" href=bibliography.html#Gordon_2014>Gordon_2014</a>].</p> 
     
 <p class="important">More on subject: <a href="https://www.youtube.com/watch?v=_sUZ96YZOQU">www.youtube.com</a>, <a href="https://mixam.com/support/colour">www.youtube.com</a>, <a href="https://www.youtube.com/watch?v=GhpBmL5_OXw">www.youtube.com</a>.</p>
